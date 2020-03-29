@@ -57,6 +57,7 @@ try {
         GITHUB_SHA: process.env.GITHUB_SHA,
         GITHUB_HEAD_REF: process.env.GITHUB_HEAD_REF || ''
       });
+      core.warning(`THE ENV IS: ${options.env}`)
 
       if(token){
         options.env.CODECOV_TOKEN = token
